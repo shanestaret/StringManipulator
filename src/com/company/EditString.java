@@ -25,12 +25,14 @@ public class EditString extends ArrayBoundedStack {
                 else
                     userInstruction += letterOfUserInstruction; //if that letter is not Z then simply add it to the String of instructions
             }
-            if(input.next().equals("Z")) { //if there is a Z right after an X
+            if(input.next().equals("Z") && userInstruction.length() > 1) { //if there is a Z right after an X
                 if(userInstruction.contains("C") && userInstruction.substring(userInstruction.length() - 4, userInstruction.length() - 3).equals("C")) //if the message also contains a C and there is a C command right before the X command...
                     userInstruction = userInstruction.substring(0, userInstruction.length() - 4); //then remove the C, X, and Z commands
                 else
                     userInstruction = userInstruction.substring(0, userInstruction.length() - 2); //then remove the X and Z command (neither are needed when manipulating the message)
             }
+            else
+            	System.out.println("\nYou may only enter a \"Z\" after an \"X\" and there must be a command to undo if a \"Z\" is entered. Therefore, your command after the \"X\" was not saved.");
             input.close(); //close the Scanner after obtaining the user instructions in order to minimize resource leak
             return userInstruction; //return the final String with the instructions
         }
