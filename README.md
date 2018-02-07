@@ -3,5 +3,5 @@ A simple Java program that can take a user's input and manipulate that input bas
 ________________________________________________________________________________________________________________________________
 
 For example, say a user inputs "Hey, I guess this is a MESSAGE that I am sending into this program!":
-␣
+\newline
 ![Picture showing input](Pictures/StringManipulatorFirst.png)
