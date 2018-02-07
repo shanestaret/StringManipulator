@@ -5,3 +5,7 @@ ________________________________________________________________________________
 For example, say a user inputs "Hey, I guess this is a MESSAGE that I am sending into this program!":
 
 ![Picture showing input](Pictures/StringManipulatorFirst.png)
+
+Then you can enter in specific instructions to manipulate this message:
+
+![Picture showing input](Pictures/StringManipulatorSec.png)
