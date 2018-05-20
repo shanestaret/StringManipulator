@@ -14,4 +14,4 @@ ________________________________________________________________________________
 
 **Based on the commands "U R X Z", the message is changed so that the final message is this:**
 
-![Picture showing input](Pictures/StringManipulatorThird.png)
+![Picture showing output](Pictures/StringManipulatorThird.png)
